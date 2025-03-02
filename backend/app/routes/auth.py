@@ -6,6 +6,10 @@ import datetime
 
 auth_bp = Blueprint("auth", __name__)
 
+@auth_bp.route("/", methods=["GET"])
+def home():
+    return jsonify(message="Welcome to the API"), 200
+
 @auth_bp.route("/signup", methods=["POST"])
 def signup():
     data = request.get_json()
