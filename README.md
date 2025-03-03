@@ -66,3 +66,18 @@ First run the flask server and then start react server with this command, You wi
 - can work on designing to make it graphically better
 - after jwt verification, i have started to work on OWASP Verification, to sign in through google and other third party platforms.
 - And if this apk became more heavier then i may have implemented the docker functionality as well.
+
+## Troubleshooting "METHOD NOT ALLOWED ERROR" in flask
+If you try to access the /login or /signup endpoints directly in a browser for e.g., by opening http://127.0.0.1:5000/login in Chrome, you may encounter this error:
+
+Method Not Allowed
+The method is not allowed for the requested URL.
+
+- The login and signup routes in Flask are designed to accept only POST requests, but when you open them in a browser, it sends a GET request by default.
+[ And to test that]
+- Open postman and test that apis with POST requests and selecting Body raw with default data
+{
+    "username": "test",
+    "email": "testuser@gmail.com",
+    "password": "12345"
+}
