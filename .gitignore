@@ -1,4 +1,6 @@
 #backend
 env/
 .env
+__pycache__/
 
+#frontend already included in it's folder

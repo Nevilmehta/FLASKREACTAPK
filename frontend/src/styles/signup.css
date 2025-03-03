@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .auth-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw; /* Ensure it takes full width */
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+  }
+  
+  .auth-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  /* Signup.css */
+  .message {
+    margin-top: 10px;
+    color: green;
+    font-size: 14px;
+    text-align: center; 
+  }
+
+  /* Style the Sign In redirect section */
+  /* Style the Sign In hyperlink */
+  .signin-redirect {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .signin-redirect p {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .signin-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .signin-link:hover {
+    text-decoration: underline;
+  }
+
+  .message.error {
+    color: red;
+    font-weight: bold; 
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+
+  
+  
